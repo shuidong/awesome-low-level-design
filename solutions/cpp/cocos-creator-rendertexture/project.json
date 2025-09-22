@@ -1,0 +1,51 @@
+{
+  "name": "cocos-rendertexture-example",
+  "version": "1.0.0",
+  "description": "Cocos Creator 3.8 RenderTexture with Custom OpenGL Commands Example",
+  "main": "RenderTextureExample.cpp",
+  "scripts": {
+    "build": "cmake --build build --config Release",
+    "clean": "cmake --build build --target clean",
+    "configure": "cmake -B build -S . -G \"Visual Studio 16 2019\" -A x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shuidong/awesome-low-level-design"
+  },
+  "keywords": [
+    "cocos2d-x",
+    "cocos-creator",
+    "opengl",
+    "rendertexture",
+    "custom-commands",
+    "win32",
+    "cpp",
+    "graphics"
+  ],
+  "author": "awesome-low-level-design contributors",
+  "license": "MIT",
+  "engines": {
+    "cocos-creator": ">=3.8.0"
+  },
+  "requirements": {
+    "cmake": ">=3.16",
+    "visual-studio": ">=2019",
+    "windows-sdk": ">=10.0",
+    "cocos2d-x": ">=4.0"
+  },
+  "features": [
+    "RenderTexture creation and management",
+    "Custom OpenGL command implementation",
+    "Shader program compilation and linking",
+    "Vertex buffer object management",
+    "Multiple shape rendering (triangle, quad, circle)",
+    "Animation and color interpolation",
+    "Layered rendering with multiple RenderTextures",
+    "Texture compositing and blending"
+  ],
+  "build": {
+    "platforms": ["win32"],
+    "configurations": ["Debug", "Release"],
+    "output": "bin/"
+  }
+}
